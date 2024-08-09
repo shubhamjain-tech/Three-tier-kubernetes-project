@@ -480,7 +480,7 @@ kubectl get ing -n three-tier-ns
 - Now hit domain name on chrome browser (**challenge.akshaydhongade.online**)
 
 ![image](https://github.com/user-attachments/assets/83bb7535-7bbb-4a36-83f2-59b875da1323)
-
+![image](https://github.com/user-attachments/assets/83bb7535-7bbb-4a36-83f2-59b875da1323)
   
 - Create some operations on todo list app
   
