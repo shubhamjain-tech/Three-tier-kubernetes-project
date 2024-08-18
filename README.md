@@ -327,7 +327,7 @@ kubectl logs api-76b4897595-fx2th -n three-tier-ns
 Go to this location on CMD:
 root@ip-172-31-37-93:~/TWSThreeTierAppChallenge/Kubernetes-Manifests-file/Frontend
 
-<h5 style="color:red;">Note:  open deplyment.yml file and change your Imange ID in file and, copy backend-imaage from ECR and mention domain name with subdomain
+<h5 style="color:red;">Note:  open deplyment.yml file and change your Imange ID in file and, copy frontend-imaage from ECR and mention domain name with subdomain
 
 ![image](https://github.com/user-attachments/assets/a5fbe2df-52c1-42d7-8a75-c65325c93a2c)
 
