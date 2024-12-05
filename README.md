@@ -539,7 +539,8 @@ kubectl get ing -n three-tier-ns
 
   ![image](https://github.com/user-attachments/assets/07323085-3e77-437b-9531-86fffbb8be91)
 
-                       #Project Successfully completed!! 
+  #Project Successfully completed!! 
+                       
 
 
 
