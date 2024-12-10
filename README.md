@@ -236,6 +236,7 @@ kubectl get pods -n three-tier-ns
  <h5 style="color:red;">Note:</h5>   when u run command get pods, then you can see your POD will be in pending state because, we have to apply secrete file.
 
 
+Note: After run deployment.yml file, please run pv and pvc filr also and make sure namespace we are created alreday three-tier-ns, it will be updated in all yml file.
 
 - Run secrete file using command
 
