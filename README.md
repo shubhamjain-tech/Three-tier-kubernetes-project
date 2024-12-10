@@ -208,7 +208,7 @@ you will see frontend app
 <h5 style="color:red;">Note:</h5>   We will get a error which could not connect  mongo Db Database 
 
 
-### Step 10 : Rum Mangodb database using Deployment file
+### Step 10 : Run Mangodb database using Deployment file
 
 Go to this location on CMD:
 root@ip-172-31-37-93:~/TWSThreeTierAppChallenge/Kubernetes-Manifests-file/Database#  
