@@ -450,10 +450,47 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 Go to this location on CMD:
 root@ip-172-31-37-93:~/TWSThreeTierAppChallenge/Kubernetes-Manifests-file#
 
+Note : update subdoamin name in ingress.yml file 
+
+```bash
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: mainlb
+  namespace: three-tier-ns
+  annotations:
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
+spec:
+  ingressClassName: alb
+  rules:
+    - host: challenge.akshaydhongade.online
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: api
+                port:
+                  number: 3500
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 3000
+```
+
+
 ```bash
 kubectl apply -f ingress.yaml -n three-tier-ns
 kubectl get ing -n three-tier-ns
 ```
+
+
 
 ![image](https://github.com/user-attachments/assets/ab2cde71-6e24-42ab-acda-49f8d45ab9a7)
 
