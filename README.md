@@ -316,7 +316,8 @@ kubectl get svc -n three-tier-ns
 - Check your databse connect to your backend
 
 ```bash
-kubectl logs api-76b4897595-fx2th -n three-tier-ns
+kubectl logs (backend-pod-api-name) -n three-tier-ns
+Example-  kubectl logs api-5496b87c8d-c5tcl -n three-tier-ns
 ```
 
 ![image](https://github.com/user-attachments/assets/31201bad-2acc-4582-993a-bb30fe9ec53a)
